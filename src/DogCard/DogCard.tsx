@@ -5,7 +5,8 @@ export default function DogCard():JSX.Element{
     const serviceUrl:string='https://dog.ceo/api/breeds/image/random';
 
     function setImageUrl():void{
-        fetch('serviceUrl')
+        console.log('get from server');
+        fetch(serviceUrl)
         .then((res:Response)=>res.json())
         .then((resultObj)=>{
            const message = resultObj.message;

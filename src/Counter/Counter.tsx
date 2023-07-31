@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Message from "../Message/Message";
 
 export default function Counter():JSX.Element{
 // const temp = useState(0);
@@ -7,7 +8,7 @@ export default function Counter():JSX.Element{
 
 // const[counter,setCounter] = temp;
 
-    const[counter,setCounter] = useState(0);
+    const[counter,setCounter] = useState<number>(0);
 
     function add():void{
         setCounter(counter+1);
@@ -23,6 +24,8 @@ export default function Counter():JSX.Element{
         <>
         <button type="button" onClick={add}>Click Me!</button>
         <h2>counter value: {counter}</h2>
+        <Message msg={String(counter)}
+        title={counter==3?'hello':'hello from counte'} />
         </>
     )
 }
