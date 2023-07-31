@@ -11,6 +11,7 @@ import Pizza2 from './Pizza2/Pizza2';
 import Pizza from './Pizza/Pizza';
 import Pizza3 from './Pizza3/Pizza3';
 import PetProcessing from './PetProcessing/PetProcessing';
+import Tips from './Tips/Tips';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
@@ -27,6 +28,7 @@ root.render(
     <Pizza3 />
     <PetProcessing />
     <DogCard />
+    <Tips />
   {/* </React.StrictMode> */}
 </>
 );
