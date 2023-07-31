@@ -6,6 +6,7 @@ import reportWebVitals from './reportWebVitals';
 import Message from './Message/Message';
 import Counter from './Counter/Counter';
 import Apple from './Apple/Apple';
+import DogCard from './DogCard/DogCard';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
@@ -13,10 +14,11 @@ const root = ReactDOM.createRoot(
 root.render(
   <>
   {/* <React.StrictMode> */}
-    <App />
+    
     <Message />
     <Counter />
     <Apple />
+    <DogCard />
   {/* </React.StrictMode> */}
 </>
 );
